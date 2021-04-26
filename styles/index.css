@@ -1,0 +1,125 @@
+*{
+  font-family: 'Arial', sans-serif;
+}
+header > img{
+  display: inline-block;
+  width: auto;  
+}
+.header-links{
+  display: inline-grid;
+  width: 80%;
+  height: 50px;
+  grid-template-columns: repeat(3, 10%);
+  grid-gap: 10px;
+  position: relative;
+  top: -63px;
+}
+.header-links > .link{
+  text-align: center;
+  position: relative;
+  top: 35px;
+  height: 39px;
+  padding-top: 35px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  letter-spacing: 1px;
+}
+.header-links > .link:hover{
+  background-color: #4471a3;
+}
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+header{
+  box-shadow: 0px 24px 21px -26px rgba(0,0,0,0.75);
+  background-color: #4f81bc;
+  display: inline-block;
+  height: 70px;
+  width: 100%;
+}
+.header__logo{
+  border: solid 1px black;
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+}
+footer{
+  background-color: rgb(17, 17, 17);
+  margin-top: 30px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+}
+.ofan-description{
+  height: 300px;
+  margin-top: 70px;
+  padding: 0 50px;
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+}
+.ofan-description > h1 {
+  font-style: normal;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.ofan-features{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+.ofan-features > h3, .about-us > h3 {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.feature{
+  height: 350px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  background-color: #4f82bc7a;
+}
+.feature-description{
+  width: 40%;
+  margin: 0 5%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 40px;
+  line-height: 40px;
+}
+.feature-image{
+  width: 50%;
+  object-fit: cover;
+  height: 350px;
+}
+.about-us__body{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}
+.about-us_element{
+  height: 400px;
+  padding: 50px 60px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.about-us_element > img{
+  margin-bottom: 20px;
+  height: 200px;
+  width: 300px;
+}
