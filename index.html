@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     <title>HTML</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/carousel.css">
     <script  src="./index.js" ></script>
   </head>
   <body>
-    <header>
+    <div id="header">
       <img src="./resources/logo.png" alt="logo" class="header__logo">
       <div class="header-links">
-        <div class="link"><strong>INICIO</strong></div>
-        <div class="link">Descripción</div>
-        <div class="link">Conocenos</div>
+        <a class="link" href="#"><strong>INICIO</strong></a>
+        <a class="link" href="#description">Descripción</a>
+        <a class="link" href="#about-us">Conócenos</a>
       </div>
-    </header> 
+    </div> 
     <div class="body">
       <section class="carousel">
         <div class="slide-container">
@@ -48,7 +50,7 @@
         </div>
       </section>
       <hr />
-      <section class="ofan-description">
+      <section class="ofan-description" id="description">
           <h1 class="title">OFAN</h1>
           <p class="description">
             OFAN es un sistema que soporta la toma decisiones
@@ -94,8 +96,8 @@
         </div>
       </section>
       <hr style="width: 80%;" />
-      <section class="about-us">        
-        <h3>Conocenos</h3>
+      <section class="about-us" id="about-us">        
+        <h3>Conócenos</h3>
         <div class="about-us__body">
           <div class="about-us_element">            
             <img src="./resources/default.jpg">

@@ -1,7 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
 *{
   font-family: 'Arial', sans-serif;
 }
-header > img{
+#header > img{
   display: inline-block;
   width: auto;  
 }
@@ -15,6 +18,7 @@ header > img{
   top: -63px;
 }
 .header-links > .link{
+  text-decoration: none;
   text-align: center;
   position: relative;
   top: 35px;
@@ -34,12 +38,16 @@ body{
   margin: 0;
   width: 100%;
 }
-header{
+#header{
   box-shadow: 0px 24px 21px -26px rgba(0,0,0,0.75);
   background-color: #4f81bc;
-  display: inline-block;
+  position: sticky;
   height: 70px;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 .header__logo{
   border: solid 1px black;
@@ -55,6 +63,9 @@ footer{
   color: white;
   text-align: center;
   padding-top: 80px;
+}
+#description, #about-us{
+  scroll-margin: 80px 0 0 0;
 }
 .ofan-description{
   height: 300px;
