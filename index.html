@@ -15,26 +15,35 @@
       <img src="./resources/logo.png" alt="logo" class="header__logo">
       <div class="header-links">
         <a class="link" href="#"><strong>INICIO</strong></a>
-        <a class="link" href="#description">Descripción</a>
+        <a class="link" href="#ofan-features">Beneficios</a>
         <a class="link" href="#about-us">Conócenos</a>
+        <a class="link" href="#contact">Contacto</a>
       </div>
     </div> 
     <div class="body">
+      <section class="ofan-description" id="description">
+          <h1 class="title">OFAN</h1>
+          <p class="description">
+            OFAN es un sistema que soporta la toma decisiones
+            productivas en base a su impacto en la rentabilidad
+            de la explotación agroindustrial. Permite el registro
+            de todos los datos operacionales de los procesos 
+            productivos, además de costos directos e indirectos 
+            de producción, administración, ventas y comercialización
+          </p>
+      </section>
       <section class="carousel">
         <div class="slide-container">
           <div class="slide fade" style="display: block;">
             <img src="./resources/carousel_1.jpg"class="carousel-image">
-            <div class="text">Caption Text</div>
           </div>
           
           <div class="slide fade">
             <img src="./resources/carousel_2.jpg" class="carousel-image">
-            <div class="text">Caption Two</div>
           </div>
           
           <div class="slide fade">
             <img src="./resources/carousel_3.jpg" class="carousel-image">
-            <div class="text">Caption Three</div>
           </div>
           
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -49,74 +58,76 @@
           </div>
         </div>
       </section>
-      <hr />
-      <section class="ofan-description" id="description">
-          <h1 class="title">OFAN</h1>
-          <p class="description">
-            OFAN es un sistema que soporta la toma decisiones
-            productivas en base a su impacto en la rentabilidad
-            de la explotación agroindustrial. Permite el registro
-            de todos los datos operacionales de los procesos 
-            productivos, además de costos directos e indirectos 
-            de producción, administración, ventas y comercialización
-          </p>
-      </section>
-      <hr style="width: 80%;"/>
-      <section class="ofan-features">
+      <section class="ofan-features" id="ofan-features">
         <h3>Beneficios</h3>
-        <div class="feature">
-          <img src="./resources/carousel_2.jpg" class="feature-image" alt="">
-          <p class="feature-description">
-            Genera reportes productivos, 
-            comerciales y económicos para
-            cada empresa, área, granja, 
-            lote y caseta, por semana,
-            mes o año facilmente
-          </p>
-        </div>
-        <div class="feature" style="background-color: white">
-          <p class="feature-description">
-            Facilita la evaluación de 
-            resultados actuales mediante 
-            su contraste contra los 
-            escenarios o presupuestos 
-            anteriormente generados.
-          </p>
-          <img src="./resources/carousel_3.jpg" class="feature-image" alt="">
-        </div>
-        <div class="feature">
-          <img src="./resources/carousel_1.jpg" class="feature-image" alt="">
-          <p class="feature-description">
-            Proporciona herramientas de 
-            optimización para determinar 
-            los parámetros productivos que 
-            generan la mayor rentabilidad 
-            en el proceso de producción
-          </p>
+        <div class="features">
+            <div class="feature">
+              <img src="./resources/chick.jpg" class="feature-image" alt="">
+              <p class="feature-description">
+                Genera reportes dinámicamente para tu empresa.
+              </p>
+            </div>
+          <div class="feature" style="background-color: white">
+            <img src="./resources/seed.jpg" class="feature-image" alt="">
+            <p class="feature-description">
+              Facilita la evaluación de 
+              resultados.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="./resources/harvest.jpg" class="feature-image" alt="">
+            <p class="feature-description">
+              Proporciona herramientas de 
+              optimización.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="./resources/plant.jpg" class="feature-image" alt="">
+            <p class="feature-description">
+              Impacto en todos los niveles de tu empresa.
+            </p>
+          </div>
         </div>
       </section>
       <hr style="width: 80%;" />
       <section class="about-us" id="about-us">        
         <h3>Conócenos</h3>
         <div class="about-us__body">
+          <div class="about-us_element">
+            <img src="./resources/pigs.jpg">
+            Estamos formados por consultores en agronegocios 
+            y consultores en el sector químico-energético 
+            a nivel internacional
+          </div>
           <div class="about-us_element">            
-            <img src="./resources/default.jpg">
+            <img src="./resources/turkeys.jpg">
             más de 20 años de experiencia en análisis 
             y diseño de procesos de negocio,y 
             optimización de la producción
           </div>
           <div class="about-us_element">
-            <img src="./resources/default.jpg">
-            Estamos formados por consultores en agronegocios 
-            y consultores en el sector químico-energético 
-            a nivel internacional
-          </div>
-          <div class="about-us_element">
-            <img src="./resources/default.jpg">
+            <img src="./resources/ipad.jpg">
             Aplicamos procesos de negocio y herramientas 
             matemáticas – IoT, IA, ML - altamente probadas
           </div>
         </div>
+      </section>
+      <section class="contact" id="contact">
+        <form id="contact-form" action="" method="post">
+          <h3>Contacto</h3>
+          <fieldset>
+            <input placeholder="Email" type="email" class="email" tabindex="1" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Numero de teléfono (Opcional)" class="phone" type="tel" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Escribe un mensaje" class="message" tabindex="3" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" class="submit" data-submit="...Sending">Enviar</button>
+          </fieldset>
+        </form>      
       </section>
     </div>
     <footer>
