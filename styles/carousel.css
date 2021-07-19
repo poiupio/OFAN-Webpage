@@ -1,7 +1,8 @@
 .carousel {
-  width: 90%;
-  padding: 45px 0;
-  height: 300px;
+  width: calc(100% - 32px);
+  padding: 0 16px;
+  height: 400px;
+  margin-top: -20px;
 }
 .slide {
   display: none;
@@ -29,7 +30,7 @@
   height: 100%;
   width: 100px;
   text-align: center;
-  line-height: 300px;
+  line-height: 400px;
 }
 .next {
   right: 0;
@@ -89,4 +90,27 @@
 }
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+.carousel-title {
+  display: block;
+  position: relative;
+  background-color: #344bce;
+  color: whitesmoke;
+  width: 70%;
+  margin: 0 15%;
+  top: 50px;
+  z-index: 50;
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 8px 16px;
+}
+.carousel-description {
+  display: block;
+  text-align: justify;
+  color: whitesmoke;
+  background-color: #344bce;
+  font-size: 1.2rem;
+  width: calc(100% - 64px);
+  margin: 80px 16px 0;
+  padding: 8px 16px;
 }

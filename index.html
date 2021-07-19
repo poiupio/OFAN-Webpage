@@ -1,139 +1,221 @@
 <!DOCTYPE html>
-  <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/carousel.css">
-    <script  src="./index.js" ></script>
-  </head>
-  <body>
-    <div id="header">
-      <img src="./resources/logo.png" alt="logo" class="header__logo">
-      <div class="header-links">
-        <a class="link" href="#"><strong>INICIO</strong></a>
-        <a class="link" href="#ofan-features">Beneficios</a>
-        <a class="link" href="#about-us">Conócenos</a>
-        <a class="link" href="#contact">Contacto</a>
-      </div>
-    </div> 
-    <div class="body">
-      <section class="ofan-description" id="description">
-          <h1 class="title">OFAN</h1>
-          <p class="description">
-            OFAN es un sistema que soporta la toma decisiones
-            productivas en base a su impacto en la rentabilidad
-            de la explotación agroindustrial. Permite el registro
-            de todos los datos operacionales de los procesos 
-            productivos, además de costos directos e indirectos 
-            de producción, administración, ventas y comercialización
-          </p>
-      </section>
-      <section class="carousel">
-        <div class="slide-container">
-          <div class="slide fade" style="display: block;">
-            <img src="./resources/carousel_1.jpg"class="carousel-image">
-          </div>
-          
-          <div class="slide fade">
-            <img src="./resources/carousel_2.jpg" class="carousel-image">
-          </div>
-          
-          <div class="slide fade">
-            <img src="./resources/carousel_3.jpg" class="carousel-image">
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
-          </div>
-          <br>          
-          <div class="dots-container">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>
-        </div>
-      </section>
-      <section class="ofan-features" id="ofan-features">
-        <h3>Beneficios</h3>
-        <div class="features">
-            <div class="feature">
-              <img src="./resources/chick.jpg" class="feature-image" alt="">
-              <p class="feature-description">
-                Genera reportes dinámicamente para tu empresa.
-              </p>
-            </div>
-          <div class="feature" style="background-color: white">
-            <img src="./resources/seed.jpg" class="feature-image" alt="">
-            <p class="feature-description">
-              Facilita la evaluación de 
-              resultados.
-            </p>
-          </div>
-          <div class="feature">
-            <img src="./resources/harvest.jpg" class="feature-image" alt="">
-            <p class="feature-description">
-              Proporciona herramientas de 
-              optimización.
-            </p>
-          </div>
-          <div class="feature">
-            <img src="./resources/plant.jpg" class="feature-image" alt="">
-            <p class="feature-description">
-              Impacto en todos los niveles de tu empresa.
-            </p>
-          </div>
-        </div>
-      </section>
-      <hr style="width: 80%;" />
-      <section class="about-us" id="about-us">        
-        <h3>Conócenos</h3>
-        <div class="about-us__body">
-          <div class="about-us_element">
-            <img src="./resources/pigs.jpg">
-            Estamos formados por consultores en agronegocios 
-            y consultores en el sector químico-energético 
-            a nivel internacional
-          </div>
-          <div class="about-us_element">            
-            <img src="./resources/turkeys.jpg">
-            más de 20 años de experiencia en análisis 
-            y diseño de procesos de negocio,y 
-            optimización de la producción
-          </div>
-          <div class="about-us_element">
-            <img src="./resources/ipad.jpg">
-            Aplicamos procesos de negocio y herramientas 
-            matemáticas – IoT, IA, ML - altamente probadas
-          </div>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <form id="contact-form" action="" method="post">
-          <h3>Contacto</h3>
-          <fieldset>
-            <input placeholder="Email" type="email" class="email" tabindex="1" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Numero de teléfono (Opcional)" class="phone" type="tel" tabindex="2" required>
-          </fieldset>
-          <fieldset>
-            <textarea placeholder="Escribe un mensaje" class="message" tabindex="3" required></textarea>
-          </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" class="submit" data-submit="...Sending">Enviar</button>
-          </fieldset>
-        </form>      
-      </section>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/carousel.css">
+  <script  src="./index.js" ></script>
+</head>
+<body>
+  <div id="header">
+    <img src="./resources/logo.png" alt="logo" class="header__logo">
+    <div class="header-links">
+      <a class="link" href="#"><strong>INICIO</strong></a>
+      <a class="link" href="#industry">INDUSTRIA</a>
+      <a class="link" href="#about-us">CONÓCENOS</a>
+      <a class="link" href="#product">PRODUCTO</a>
+      <a class="link" href="#support">SOPORTE</a>
+      <a class="link" href="#contact-us">CONTACTO</a>      
     </div>
-    <footer>
-      <p class="footer-description">
-        todos los derechos reservados
-      </p>
-    </footer>
-  </body>
+  </div>
+  <div class="body">
+    <section class="carousel">
+      <span class="carousel-title">EMPRESA DE SOFTWARE Y CONSULTORÍA EN INTELIGENCIA OPERACIONAL EN AGRONEGOCIOS E INDUSTRIAS DE PRODUCCIÓN</span>
+      <div class="slide-container">
+        <div class="slide fade" style="display: block;">
+          <img src="./resources/carousel_3.jpg"class="carousel-image">
+        </div>
+        
+        <div class="slide fade">
+          <img src="./resources/carousel_2.jpg" class="carousel-image">
+        </div>
+        
+        <div class="slide fade">
+          <img src="./resources/carousel_1.jpg" class="carousel-image">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>          
+        <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </div>
+      <span class="carousel-description">
+        <strong>Nuestra Misión es:</strong>
+        <br>
+        Proveer a la Agro Industria la información necesaria para la toma de decisiones 
+        operacionales considerando las características únicas de cada industria mediante 
+        herramientas tecnológicas y procesos de análisis avanzados y facilitar el 
+        pronóstico y evaluación económica y financiera de diferentes escenarios productivos 
+      </span>
+    </section>
+    <section class="industry" id="industry">
+      <h3>OFAN</h3>
+      <div class="industry-body">
+        <img src="./resources/Picture2.png" alt="">
+        <p class="industry-description">
+          Empresa de software y soluciones formada por consultores en agronegocios 
+          y consultores en el sector químico-energético a nivel internacional. 
+          OFAN integra las características únicas de la agroindustria con las mejores 
+          prácticas y tecnologías avanzadas de la industria química y energética mundial. 
+          <br>
+          <br>
+          <br>
+          Mediante la aplicación de procesos de negocio y herramientas matemáticas – IoT, 
+          IA, ML - altamente probadas y utilizadas desde hace muchos años en otras 
+          industrias transferimos este expertise al sector agroindustrial, con la premisa 
+          siempre de que el beneficio de la aplicación tiene que ser superior al costo.
+          <br>
+          <br>
+          <br>
+          Contamos con más de 20 años de experiencia en análisis y diseño de sistemas, 
+          procesos de negocio, desarrollo e implementación de sistemas de captura de 
+          información, costeo de procesos complejos, análisis económicos, optimización, 
+          planeación y control de la producción. El resultado de este sistema facilita la 
+          vinculación de la operación agroindustrial con la cadena de suministros, la 
+          administración financiera y la comercialización.
+          <br>
+          <br>
+          <br>
+          Este sistema ha sido desarrollado para la producción tecnificada avícola, 
+          porcícola, incubadoras, plantas de alimento balanceado, producción acuícola y 
+          en general, cualquier agro industria.
+        </p>
+      </div>
+    </section>
+    <section class="about-us" id="about-us">        
+      <h3>Conócenos</h3>
+      <div class="about-us__body">
+        <div class="about-us_element">
+          <img src="./resources/pigs.jpg">
+          Estamos formados por consultores en agronegocios 
+          y consultores en el sector químico-energético 
+          a nivel internacional
+        </div>
+        <div class="about-us_element">            
+          <img src="./resources/turkeys.jpg">
+          más de 20 años de experiencia en análisis 
+          y diseño de procesos de negocio,y 
+          optimización de la producción
+        </div>
+        <div class="about-us_element">
+          <img src="./resources/ipad.jpg">
+          Aplicamos procesos de negocio y herramientas 
+          matemáticas – IoT, IA, ML - altamente probadas
+        </div>
+      </div>
+    </section>
+    <section class="product" id="product">
+      <div class="product-body">
+        <img src="./resources/IMAGEN CERDOS Y PANTALLAS.png" alt="">
+        <p class="product-description">
+          OFAN es un sistema que soporta la toma decisiones productivas en base a su 
+          impacto en la rentabilidad de la explotación agroindustrial. Permite el 
+          registro de todos los datos operacionales de los procesos biológicos y productivos,
+           además de costos directos e indirectos de producción, administración, ventas
+          y comercialización, etc. para generar indicadores de desempeño operacionales 
+          y económicos mediante un proceso de costo basado en datos biológicos y en 
+          un modelo matemático propio de la producción agroindustrial.
+          Genera reportes productivos, comerciales y económicos para cada empresa, 
+          área, granja, lote y caseta, por semana, mes o año, para lo cual se integra 
+          fácilmente con otras aplicaciones productivas, contables y administrativas.
+        </p>
+        <img src="./resources/DIAGRAMA MAXIMIZAR RENTABILIDAD.png" class="product-diagram" alt="">
+        <p class="product-description diagram-description">
+          Permite el análisis de diferentes casos y escenarios futuros, utilizando 
+          un modelo matemático productivo y la aplicación de métodos de pronóstico 
+          especializados permitiendo elaborar un mejor presupuesto operativo en base 
+          a los resultados de rentabilidad y no únicamente en los productivos. 
+          Facilita la evaluación de resultados actuales mediante su contraste contra 
+          los escenarios o presupuestos anteriormente generados.
+          OFAN genera la información necesaria para soportar el gerenciamiento y 
+          dirección de la empresa enriqueciendo los procesos de negocio como son 
+          obtención del costo de producción, evaluación del desempeño y sus indicadores, 
+          pronóstico de consumos, costos y ventas, presupuestación y seguimiento al 
+          resultado real.
+          OFAN proporciona herramientas de optimización para determinar los parámetros 
+          productivos (edad, peso y consumo) que generan la mayor rentabilidad en el 
+          proceso de producción y permite analizar el comportamiento e impacto de los 
+          mismos ante variaciones en los precios y costos de mercados, productos, 
+          insumos, gastos y de factores de producción.
+        </p>
+      </div>      
+      <img src="./resources/arquitectura_ofan.png" alt="architecture" class="architecture">
+      <div class="features">
+        <div class="feature">
+          <p class="feature-description">
+            El OFAN le permite al gerenciamiento poderle dar seguimiento a los 
+            datos reales del negocio y compararlos con los proyectados, para 
+            detectar áreas de oportunidad o actualizar circunstancias. 
+          </p>
+        </div>
+        <div class="feature">
+          <p class="feature-description">
+            A través de una interfase de visualización de Microsoft Excel que 
+            interpreta y analiza los datos presentados, en el depositorio de la 
+            información, para enfocar el tiempo y los recursos a las decisiones.
+          </p>
+        </div>
+        <div class="feature">
+          <p class="feature-description">
+            Gracias al tablero de resultados en código de colores y gráficos, 
+            permite identificar no sólo los indicadores definidos, sino como y 
+            porque cambiaron las variables de dichos indicadores.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="support" id="support">
+      <hr>
+      <h3>SOPORTE</h3>
+      <span class="support-element">
+        EN LA IMPLEMENTACIÓN DEL SISTEMA OFAN EN SU AGRONEGOCIO, SIEMPRE ESTARA 
+        DISPONIBLE EL SOPORTE TECNICO DEL FUNCIONAMIENTO DEL SOFTWARE PARA GARANTIZAR 
+        LA OBTENCIÓN Y LOS PODEROSOS ANALISIS DE INFORMACIÓN QUE EL SISTEMA PROPORCIONA.
+      </span>
+      <span class="support-element">
+        TAMBIEN CUENTA CON LA CONSULTORÍA EN REPORTEO, GENERACIÓN 
+        Y ANALISIS DE INFORMACIÓN ADICIONAL NECESARIA.
+      </span>
+      <span class="support-element">
+        SIEMPRE SU PERSONAL GERENCIAL, DE TI Y OPERATIVO ESTARA ACOMPAÑADO 
+        EN EL FUNCIONAMIENTO CORRECTO DEL SISTEMA.
+      </span>
+      <span class="support-element">
+        CAPACIDAD DE DESARROLLO E INTEGRACIÓN CON OTRAS APLICACIONES EN SU AGROINDUSTRIA.
+      </span>
+    </section>
+    <section class="contact" id="contact-us">
+      <form id="contact-form" action="" method="post">
+        <h3>Contacto</h3>
+        <fieldset>
+          <input placeholder="Email" type="email" class="email" tabindex="1" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Numero de teléfono (Opcional)" class="phone" type="tel" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Escribe un mensaje" class="message" tabindex="3" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" class="submit" data-submit="...Sending">Enviar</button>
+        </fieldset>
+      </form>      
+    </section>
+  </div>
+  <footer>
+    <p class="footer-description">
+      todos los derechos reservados
+    </p>
+  </footer>
+</body>
 </html>
