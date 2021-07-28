@@ -3,6 +3,7 @@ html {
 }
 *{
   font-family: 'Trebuchet MS', sans-serif;
+  color: rgb(38, 38, 65);
 }
 #header > img{
   display: inline-block;
@@ -101,26 +102,30 @@ footer{
 }
 .industry{
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 150px;
   padding: 0 16px;
 }
 .industry > h3 {
   width: 100%;
   padding: 16px 0 0 0;
-  padding-left: 73%;
-  color: rgb(68, 114, 196);
+  padding-left: 69%;
+  color: rgb(0, 0, 73);;
   height: fit-content;
   margin-bottom: 0;
   margin-top: 50px;
+  font-size: 44px;
 }
 .industry-body > img {
   border-top: 1px solid black;
-  margin: 0 auto 0;
+  margin: 30px auto 0;
   display: block;
 }
-.about-us > h3 {
+.product > h3 {
   width: 100%;
-  font-size: 40px;
+  font-size: 44px;
+  margin-top: 32px;
+  margin-bottom: 16px;
   text-align: center;
   font-weight: bold;
   color: rgb(0, 0, 73);
@@ -133,13 +138,15 @@ footer{
 .industry-description {
   padding-right: 45px;
   text-align: justify;
+  font-size: 20px;
 }
 .about-us__body{
-  width: 70%;
-  padding: 0 15%;
+  width: calc(100% - 32px);
+  padding: 16px;
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
+  background-color: rgb(241, 241, 241);
 }
 .about-us_element{
   height: 300px;
@@ -149,10 +156,6 @@ footer{
   text-align: center;
   font-weight: bold;
   padding-top: 10px;
-}
-.about-us_element:hover {
-  background-color: rgb(211, 211, 211);
-  border-radius: 8px;
 }
 .about-us_element > img{
   margin-bottom: 20px;
@@ -165,7 +168,7 @@ footer{
 }
 .product-body > img {
   padding: 16px;
-  height: 350px;
+  height: 400px;
   width: calc(100% - 32px);
 }
 .product-description {
@@ -178,12 +181,16 @@ footer{
 }
 .diagram-description {
   text-align: justify;
-  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-column-gap: 5%;
+  border-bottom: solid 0.5px lightgrey;
+  padding: 16px 40px;
 }
 .product-diagram {
   height: auto !important;
   width: auto !important;
-  margin: 10px auto 10px;
+  margin: 70px auto 10px;
   display: block;
 }
 #contact-us {
@@ -227,7 +234,7 @@ fieldset {
   cursor: pointer;
   width: 80%;
   border: none;
-  background: #3330ff;
+  background: #4472C4;
   color: #FFF;
   margin: 20px 10% 0;
   padding: 20px;
@@ -264,7 +271,7 @@ fieldset {
   box-shadow: 1px -11px 23px -10px rgb(255 255 255 / 82%);
   text-align: end;
   padding-top: 40px;
-  width: 100%;
+  width: 90%;
   margin: 20px 0 0 25px;
   padding: 0px 20px 21px 0px;
   height: 90px;
@@ -279,6 +286,7 @@ fieldset {
   display: inline-block;
   width: 45%;
   padding: 16px;
+  margin-top: 35px;
 }
 .support-element {
   width: 90%;
@@ -297,7 +305,17 @@ fieldset {
   padding-bottom: 16px;
 }
 .support > h3 {
-  color: rgb(68, 114, 196);
+  color: rgb(2, 2, 144);
   text-align: center;
   font-size: 32px;
+}
+.mission {
+  display: block;
+  text-align: justify;
+  color: whitesmoke;
+  background-color: #4472C4;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0 16px 40px;
+  padding: 8px 16px;
 }
