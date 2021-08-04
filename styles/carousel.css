@@ -87,9 +87,6 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 .carousel-title {
   display: block;
   background-color: #4472C4;
@@ -100,4 +97,22 @@
   text-align: center;
   font-size: 1.7rem;
   padding: 8px 16px;
+}
+@media only screen and (max-device-width : 640px) {
+  .prev, .next {
+    font-size: 20px;
+    line-height: 200px;
+  }
+  .carousel-title {
+    width: 100%;
+    margin: 10px 0 0;
+    font-size: 22px;
+  }
+  .carousel {
+    padding: 0;
+  }
+  .slide-container {
+    width: 110%;
+    height: 230px;
+  }
 }

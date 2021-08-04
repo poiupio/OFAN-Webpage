@@ -21,6 +21,17 @@
       <a class="link" href="#support">SOPORTE</a>
       <a class="link" href="#contact-us">CONTACTO</a>      
     </div>
+    <div class="hide-on-desk">
+      <button id="menu-btn" onclick="showMenuMobile()">Menú ▼</button>
+      <div id="dropdown-menu">
+        <a class="link" href="#"><strong>INICIO</strong></a>
+        <a class="link" href="#about-us">MISIÓN</a>
+        <a class="link" href="#industry">INDUSTRIA</a>
+        <a class="link" href="#product">PRODUCTO</a>
+        <a class="link" href="#support">SOPORTE</a>
+        <a class="link" href="#contact-us">CONTACTO</a>      
+      </div>
+    </div>
   </div>
   <div class="body">
     <section class="carousel">
@@ -80,14 +91,15 @@
     </section>
     <section class="about-us" id="about-us">
       <div class="about-us__body">
-        <span class="mission">
-          <strong>Nuestra Misión es:</strong>
-          <br>
-          Proveer a la Agro Industria la información necesaria para la toma de decisiones 
-          operacionales considerando las características únicas de cada industria mediante 
-          herramientas tecnológicas y procesos de análisis avanzados y facilitar el 
-          pronóstico y evaluación económica y financiera de diferentes escenarios productivos 
-        </span>
+        <div class="mission">
+          <img class="mission-img" src="./resources/ipad.jpg">
+          <p class="mission-text">
+            Proveer a la Agro Industria la información necesaria para la toma de decisiones 
+            operacionales considerando las características únicas de cada industria mediante 
+            herramientas tecnológicas y procesos de análisis avanzados y facilitar el 
+            pronóstico y evaluación económica y financiera de diferentes escenarios productivos 
+          </p>
+        </div>
       </div>
     </section>
     <section class="product" id="product">
@@ -110,7 +122,7 @@
           área, granja, lote y caseta, por semana, mes o año, para lo cual se integra 
           fácilmente con otras aplicaciones productivas, contables y administrativas.
         </p>
-        <img src="./resources/DIAGRAMA MAXIMIZAR RENTABILIDAD.png" class="product-diagram" alt="">
+        <img src="./resources/DIAGRAMA MAXIMIZAR RENTABILIDAD.png" class="hide-on-mobile product-diagram" alt="">
         <p class="product-description diagram-description">
           <span class="column">
             Permite el análisis de diferentes casos y escenarios futuros, utilizando 
@@ -120,14 +132,14 @@
             Facilita la evaluación de resultados actuales mediante su contraste contra 
             los escenarios o presupuestos anteriormente generados. 
           </span>
-          <span class="column">
+          <span class="column hide-on-mobile">
             OFAN genera la información necesaria para soportar el gerenciamiento y 
             dirección de la empresa enriqueciendo los procesos de negocio como son 
             obtención del costo de producción, evaluación del desempeño y sus indicadores, 
             pronóstico de consumos, costos y ventas, presupuestación y seguimiento al 
             resultado real.
           </span>
-          <span class="column">
+          <span class="column hide-on-mobile">
             OFAN proporciona herramientas de optimización para determinar los parámetros 
             productivos (edad, peso y consumo) que generan la mayor rentabilidad en el 
             proceso de producción y permite analizar el comportamiento e impacto de los 
@@ -136,7 +148,7 @@
           </span>
         </p>
       </div>      
-      <img src="./resources/arquitectura_ofan.png" alt="architecture" class="architecture">
+      <img src="./resources/arquitectura_ofan.png" alt="architecture" class="architecture ">
       <div class="features">
         <div class="feature">
           <p class="feature-description">

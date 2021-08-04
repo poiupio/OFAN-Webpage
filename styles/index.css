@@ -18,6 +18,9 @@ html {
   position: relative;
   top: -63px;
 }
+.hide-on-desk {
+  display: none;
+}
 .header-links > .link{
   text-decoration: none;
   text-align: center;
@@ -71,13 +74,11 @@ footer{
   text-align: center;
   padding-top: 80px;
 }
-#description, #about-us, #contact-us, #industry, #product, #support {
-  scroll-margin: 80px 0 0 0;
-}
-#ofan-features {
+#description, #contact-us, #industry, #product, #support, #ofan-features {
   scroll-margin: 80px 0 0 0;
 }
 #about-us {
+  scroll-margin-top: 40px;
   background-color: rgba(243, 240, 240, 0.815);
   padding-top: 32px;
 }
@@ -310,12 +311,155 @@ fieldset {
   font-size: 32px;
 }
 .mission {
-  display: block;
   text-align: justify;
-  color: whitesmoke;
   background-color: #4472C4;
   font-size: 1.2rem;
   width: 100%;
   margin: 0 16px 40px;
   padding: 8px 16px;
+}
+.mission-text{
+  vertical-align: top;
+  display: inline-block;
+  color: whitesmoke;
+  width: 35%;
+  font-style: italic;
+  font-weight: 100;
+  padding: 170px 4% 0;
+}
+.mission-img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: inline-block;
+  height: auto;
+  width: 55%;
+}
+@media only screen and (max-device-width : 640px) {
+  .header-links{
+    display: none;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .hide-on-desk {
+    display: inline-block;
+    padding: 25px;
+    vertical-align: top;
+    display: inline-block;
+    width: 33%;
+  }
+  #menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  #dropdown-menu {
+    display: none;
+  }
+  .show-menu {
+    display: block !important;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #4472C4;
+    height: auto;
+    box-shadow: 0px 24px 21px -26px rgba(0,0,0,0.75);
+  }
+  .link {
+    color: white;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-top: 1px solid #385fa3;
+  }
+  .industry {
+    margin-top: -60px;
+    width: 100%;
+    padding: 0;
+  }
+  .industry > h3{
+    padding: 0;
+    text-align: center;
+  }
+  .industry-body {
+    grid-template-columns: 100%;
+  }
+  .industry-body > img {
+    width: 100%;
+    height: auto;
+  }
+  .industry-description {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 250px;
+    overflow: hidden;
+  }
+  .mission {
+    padding: 0;
+    border-radius: 8px;
+  }
+  .mission-img {
+    width: 100%;
+    padding: 0;
+  }
+  .mission-text {
+    width: 90%;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .support-element {
+    width: 85%;
+    margin-left: calc(7% - 16px);
+    text-align: right;
+  }
+  #contact-us {
+    padding-top: 5px;
+  }
+  #contact-form {
+    width: 80%;
+    margin-left: 3%;
+  }
+  .product-body {
+    grid-template-columns: 100%;
+    height: 600px;
+  }
+  .product-body > img {
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  .product-description {
+    grid-row: 2/3;
+  }
+  .column {
+    width: 100%;
+    text-align: center;
+  }
+  .product-description {
+    display: block;
+    width: 92%;
+    grid-template-columns: 100%;
+    margin: 0;
+    padding: 10px 15px;
+    padding-top: 20px;
+  }
+  .features {
+    width: 100%;
+  }
+  .architecture {
+    width: 100%;
+    padding: 0;
+  }
+  .feature-description {
+    height: auto;
+    width: 83%;
+  }
 }
