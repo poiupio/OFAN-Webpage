@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/carousel.css">
   <script  src="./index.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div id="header">
@@ -35,7 +36,7 @@
     <div class="select-lenguaje">
       <span class="language-span" onclick="showLanguageMenuMobile()">Lenguaje ▼</span>
       <div class="language-dropdown hidden-dropdrown" id="dropdown-language">
-        <a class="language-link" href="#">ESPAÑOL</a>
+        <a class="language-link" href="/">ESPAÑOL</a>
         <a class="language-link" href="/index_english.html">ENGLISH</a>
       </div>
     </div>
@@ -204,16 +205,16 @@
       <form id="contact-form" action="" method="post">
         <h3>Contacto</h3>
         <fieldset>
-          <input placeholder="Email" type="email" class="email" tabindex="1" required>
+          <input placeholder="Email" id="email-input" type="email" class="email" tabindex="1" required>
         </fieldset>
         <fieldset>
-          <input placeholder="Numero de teléfono (Opcional)" class="phone" type="tel" tabindex="2" required>
+          <input placeholder="Numero de teléfono (Opcional)" id="phone-input" class="phone" type="tel" tabindex="2" required>
         </fieldset>
         <fieldset>
-          <textarea placeholder="Escribe un mensaje" class="message" tabindex="3" required></textarea>
+          <textarea placeholder="Escribe un mensaje" id="message-input" class="message" tabindex="3" required></textarea>
         </fieldset>
         <fieldset>
-          <button name="submit" type="submit" class="submit" data-submit="...Sending">Enviar</button>
+          <span name="submit" class="submit" onclick="sendMail()">Enviar</span>
         </fieldset>
       </form>      
     </section>

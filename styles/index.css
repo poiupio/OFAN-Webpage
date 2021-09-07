@@ -263,6 +263,8 @@ fieldset {
   width: 100%;
 }
 .submit {
+  display: block;
+  text-align: center;
   cursor: pointer;
   width: 80%;
   border: none;
