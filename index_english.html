@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>OFAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/carousel.css">
+  <script  src="./index.js" ></script>
+</head>
+<body>
+  <div id="header">
+    <img src="./resources/logo.png" alt="logo" class="header__logo">
+    <div class="header-links">
+      <a class="link" href="#"><strong>HOME</strong></a>
+      <a class="link" href="#about-us">MISSION</a>
+      <a class="link" href="#industry">INDUSTRY</a>
+      <a class="link" href="#product">PRODUCT</a>
+      <a class="link" href="#support">SUPPORT</a>
+      <a class="link" href="#contact-us">CONTACT</a>      
+    </div>
+    <div class="hide-on-desk">
+      <button id="menu-btn" onclick="showMenuMobile()">Menu ▼</button>
+      <div id="dropdown-menu">
+        <a class="link" href="#"><strong>INICIO</strong></a>
+        <a class="link" href="#about-us">MISSION</a>
+        <a class="link" href="#industry">INDUSTRY</a>
+        <a class="link" href="#product">PRODUCT</a>
+        <a class="link" href="#support">SUPPORT</a>
+        <a class="link" href="#contact-us">CONTACT</a>      
+      </div>
+    </div>
+    <div class="select-lenguaje">
+      <span class="language-span" onclick="showLanguageMenuMobile()">Language ▼</span>
+      <div class="language-dropdown hidden-dropdrown" id="dropdown-language">
+        <a class="language-link" href="/index.html">ESPAÑOL</a>
+        <a class="language-link" href="#">ENGLISH</a>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <section class="carousel">
+      <span class="carousel-title">SOFTWARE COMPANY AND OPERATIONAL INTELLIGENCE CONSULTING IN AGRIBUSINESS AND PRODUCTION INDUSTRIES</span>
+      <div class="slide-container">
+        <div class="slide fade" style="display: block;">
+          <img src="./resources/carousel_3.jpg"class="carousel-image">
+        </div>
+        
+        <div class="slide fade">
+          <img src="./resources/carousel_2.jpg" class="carousel-image">
+        </div>
+        
+        <div class="slide fade">
+          <img src="./resources/carousel_1.jpg" class="carousel-image">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>          
+        <div class="dots-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </div>
+    </section>
+    <section class="industry" id="industry">
+      <h3>OFAN</h3>
+      <div class="industry-body">
+        <img src="./resources/Picture2.png" alt="">
+        <p class="industry-description">
+          Software and solutions company formed by agribusiness consultants
+          and consultants in the chemical-energy sector at an international level.
+          OFAN integrates the unique characteristics of agribusiness with the best
+          advanced technologies and practices of the global chemical and energy industry.
+          <br>
+          <br>
+          <br>
+          By applying business processes and mathematical tools - IoT,
+          IA, ML - highly tested and used for many years in other
+          industries we transfer this expertise to the agribusiness sector, with the premise
+          provided that the benefit of the application has to exceed the cost.
+          <br>
+          <br>
+          <br>
+          We have more than 20 years of experience in systems analysis and design,
+          business processes, development and implementation of data capture systems
+          information, complex process costing, economic analysis, optimization,
+          Planification and control of the production. The result of this system facilitates the
+          linking the agro-industrial operation with the supply chain, the
+          financial management and marketing.
+        </p>
+      </div>
+    </section>
+    <section class="about-us" id="about-us">
+      <div class="about-us__body">
+        <div class="mission">
+          <img class="mission-img" src="./resources/ipad.jpg">
+          <p class="mission-text">
+            Provide the Agro Industry with the necessary information for decision making
+            considering the unique characteristics of each industry through
+            technological tools and advanced analysis processes and facilitate the
+            forecast and economic and financial evaluation of different production scenarios
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="product" id="product">
+      <h3>Product</h3>    
+      <div class="product-body">
+        <img src="./resources/IMAGEN CERDOS Y PANTALLAS.png" alt="">
+        <p class="product-description">
+          OFAN is a system that supports making productive decisions based on your
+          impact on the profitability of agribusiness exploitation.
+          <br>
+          <br>
+          It allows the registration of all operational data of biological and productive processes,
+           in addition to direct and indirect costs of production, administration, sales
+          and marketing, etc. to generate operational performance indicators
+          and economic through a cost process based on biological data and
+          a mathematical model of agroindustrial production.
+          <br>
+          <br>
+          Generates productive, commercial and economic reports for each company,
+          area, farm, lot and shed, by week, month or year, for which it is integrated
+          easily with other production, accounting and administrative applications.
+        </p>
+        <img src="./resources/DIAGRAMA MAXIMIZAR RENTABILIDAD.png" class="hide-on-mobile product-diagram" alt="">
+        <p class="product-description diagram-description">
+          <span class="column">
+            It allows the analysis of different cases and future scenarios, using
+            a productive mathematical model and the application of forecasting methods
+            specialized allowing the elaboration of a better operating budget based on
+            to the profitability results and not only in the productive ones.
+            Facilitates the evaluation of current results by contrasting against
+            the scenarios or budgets previously generated.
+          </span>
+          <span class="column hide-on-mobile">
+            OFAN generates the necessary information to support the management and
+            company management enriching business processes such as
+            obtaining the cost of production, performance evaluation and its indicators,
+            forecast of consumption, costs and sales, budgeting and monitoring
+            actual result.
+          </span>
+          <span class="column hide-on-mobile">
+            OFAN provides optimization tools to determine the parameters
+            productive (age, weight and consumption) that generate the highest profitability in the
+            production process and allows analyzing the behavior and impact of the
+            same before variations in prices and costs of markets, products,
+            inputs, expenses and factors of production.
+          </span>
+        </p>
+      </div>      
+      <img src="./resources/arquitectura_ofan.png" alt="architecture" class="architecture ">
+      <div class="features">
+        <div class="feature">
+          <p class="feature-description">
+            OFAN allows management to follow up on the
+            real business data and compare it with projected data, to
+            detect areas of opportunity or update circumstances.
+          </p>
+        </div>
+        <div class="feature">
+          <p class="feature-description">
+            Through a Microsoft Excel visualization interface that
+            interprets and analyzes the data presented, in the repository of the
+            information, to focus time and resources on decisions.
+          </p>
+        </div>
+        <div class="feature">
+          <p class="feature-description">
+            Thanks to the scoreboard in color code and graphics,
+            allows identifying not only the defined indicators, but also how and
+            because the variables of said indicators changed.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="support" id="support">
+      <hr>
+      <h3>SUPPORT</h3>
+      <span class="support-element">
+        IN THE IMPLEMENTATION OF THE OFAN SYSTEM IN YOUR AGRIBUSINESS, IT WILL ALWAYS BE
+        TECHNICAL SUPPORT FOR THE OPERATION OF THE SOFTWARE AVAILABLE TO GUARANTEE
+        THE OBTAINING AND THE POWERFUL ANALYSIS OF INFORMATION THAT THE SYSTEM PROVIDES.
+      </span>
+      <span class="support-element">
+        ALSO HAS THE CONSULTANCY IN REPORTING, GENERATION
+        AND ANALYSIS OF ADDITIONAL NECESSARY INFORMATION.
+      </span>
+      <span class="support-element">
+        ALWAYS YOUR MANAGEMENT, IT AND OPERATIONAL STAFF WILL BE ACCOMPANIED
+        IN THE CORRECT OPERATION OF THE SYSTEM.
+      </span>
+      <span class="support-element">
+        DEVELOPMENT CAPACITY AND INTEGRATION WITH OTHER APPLICATIONS IN YOUR AGROINDUSTRY.
+      </span>
+    </section>
+    <section class="contact" id="contact-us">
+      <form id="contact-form" action="" method="post">
+        <h3>CONTACT</h3>
+        <fieldset>
+          <input placeholder="Email" type="email" class="email" tabindex="1" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Telephone number (Optional)" class="phone" type="tel" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Write a message" class="message" tabindex="3" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" class="submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </form>      
+    </section>
+  </div>
+  <footer>
+    <p class="footer-description">
+      All rights reserved
+    </p>
+  </footer>
+</body>
+</html>

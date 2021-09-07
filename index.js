@@ -28,3 +28,7 @@ function showSlides(n) {
 function showMenuMobile() {
   document.getElementById("dropdown-menu").classList.toggle("show-menu");
 }
+
+function showLanguageMenuMobile() {
+  document.getElementById("dropdown-language").classList.toggle("hidden-dropdrown");
+}
