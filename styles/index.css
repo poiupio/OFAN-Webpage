@@ -118,7 +118,7 @@ body{
 section {
   color: #013045;
 }
-#about-us, #industry, #mission, #product, #support, #contact-us {
+#about-us, #industry, #mission, #product, #support {
   scroll-margin: 60px 0 0 0;
 }
 .home-image {
