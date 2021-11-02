@@ -2,9 +2,24 @@ html {
   scroll-behavior: smooth;
 }
 *{
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Ciutadella', sans-serif;
   color: rgb(38, 38, 65);
 }
+@font-face {
+  font-family: 'Ciutadella';
+  src: URL('../resources/Fonts/Ciutadella-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ciutadella-bold';
+  src: URL('../resources/Fonts/Ciutadella-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ciutadella-light';
+  src: URL('../resources/Fonts/Ciutadella-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ciutadella-medium';
+  src: URL('../resources/Fonts/Ciutadella-Medium.ttf') format('truetype');}
 #header > img{
   display: inline-block;
   width: auto;  
@@ -12,11 +27,11 @@ html {
 .header-links{
   display: inline-grid;
   width: 80%;
-  height: 50px;
-  grid-template-columns: repeat(6, 10%);
-  grid-gap: 10px;
+  height: 40px;
+  padding-left: calc(100% - 890px);
+  grid-template-columns: repeat(7, 120px);
   position: relative;
-  top: -63px;
+  top: -45px;
 }
 .hide-on-desk {
   display: none;
@@ -26,16 +41,18 @@ html {
   text-align: center;
   position: relative;
   top: 35px;
-  height: 39px;
-  padding-top: 35px;
+  height: 40px;
+  padding-top: 30px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 22px;
   cursor: pointer;
   color: white;
-  letter-spacing: 1px;
+  letter-spacing: 1px;  
+  transition: background-color 0.5s;
 }
 .header-links > .link:hover{
-  background-color: #4471a3;
+  background-color: rgb(66,106,153);
+  background-color: linear-gradient(0deg, rgba(66,106,153,1) 0%, #4492c3 40%, #4492c3 100%); 
 }
 .select-lenguaje {
   position: absolute;
@@ -82,9 +99,9 @@ body{
 }
 #header{
   box-shadow: 0px 24px 21px -26px rgba(0,0,0,0.75);
-  background-color: #4f81bc;
+  background-color: #4492c3;
   position: sticky;
-  height: 70px;
+  height: 60px;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -98,133 +115,175 @@ body{
   width: 100px;
   height: 50px;
 }
-footer{
-  background-color: rgb(17, 17, 17);
-  height: 200px;
-  color: white;
-  text-align: center;
-  padding-top: 80px;
+section {
+  color: #013045;
 }
-#description, #contact-us, #industry, #product, #support, #ofan-features {
-  scroll-margin: 80px 0 0 0;
+#about-us, #industry, #mission, #product, #support, #contact-us {
+  scroll-margin: 60px 0 0 0;
+}
+.home-image {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 #about-us {
-  scroll-margin-top: 40px;
-  background-color: rgba(243, 240, 240, 0.815);
-  padding-top: 32px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100vh;
 }
-.ofan-description{
-  height: 300px;
-  margin-top: 0;
-  padding: 0 25px;
-  font-size: 25px;
-  text-align: center;
+.about-us-image {
+  display: inline-block;
+  width: 100%;
+  height: 90vh;
+  padding: 5vh 10%;
+  padding-left: 0;
 }
-.ofan-description > h1 {
-  font-style: normal;
-  margin-bottom: 30px;
-  font-size: 50px;
+.about-us-title, .industry-title, .mission-title, .product-title, .support-title {
+  font-family: 'Ciutadella-bold', sans-serif;
   font-weight: bold;
-  color: rgb(2, 2, 144);
+  font-size: 34px;
+  text-align: center;
+  padding: 20px 0 0;
 }
-.description {
-  color: #5f6777;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.about-us-description, .industry-description {
+  font-size: 1.5vw;
+  font-family: 'Ciutadella';
 }
-.industry{
-  width: 100%;
-  margin-bottom: 20px;
-  margin-top: 150px;
-  padding: 0 16px;
-}
-.industry > h3 {
-  width: 100%;
-  padding: 16px 0 0 0;
-  padding-left: 69%;
-  color: rgb(0, 0, 73);;
-  height: fit-content;
-  margin-bottom: 0;
-  margin-top: 50px;
-  font-size: 44px;
-}
-.industry-body > img {
-  border-top: 1px solid black;
-  margin: 30px auto 0;
+.about-us-description > .section, .industry-description > .section, .product-description > .section, .more-info-description > .section, .support-description > .section {
   display: block;
-}
-.product > h3 {
-  width: 100%;
-  font-size: 44px;
-  margin-top: 32px;
-  margin-bottom: 16px;
-  text-align: center;
-  font-weight: bold;
-  color: rgb(0, 0, 73);
-}
-.industry-body {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 8px;
-}
-.industry-description {
-  padding-right: 45px;
   text-align: justify;
-  font-size: 20px;
+  padding: 1.5vw 50px;
 }
-.about-us__body{
-  width: calc(100% - 32px);
-  padding: 16px;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: nowrap;
-  background-color: rgb(241, 241, 241);
+.about-us-description > .section > .bold {
+  font-family: 'Ciutadella-bold';
+  color: #012333;
 }
-.about-us_element{
-  height: 300px;
-  padding: 50px 30px;
-  font-size: 14px;
-  color: #333233;
-  text-align: center;
+#industry {
+  background-image: url(../resources/11.jpg);
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 57%;
+  padding-top: 20px;
+}
+.industry-title {
+  color: white;  
+}
+.industry-description > .section {
+  color: white;
+  font-family: 'Ciutadella';
   font-weight: bold;
-  padding-top: 10px;
+  font-style: italic;
+  font-size: 1.4vw;
 }
-.about-us_element > img{
-  margin-bottom: 20px;
-  height: 200px;
-  width: 100%;
+.industry-description > .section > .bold {
+  font-family: 'Ciutadella-bold';
+  color: #0275aa;
 }
-.product-body {
+#mission {
+  background-image: url(../resources/08.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10vh 40px 0 70%;
+}
+.mission-title {
+  color: white;
+}
+.mission-description > .section {
+  color: white;
+  font-family: 'Ciutadella';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.6vw;
+  text-align: justify;
+}
+.mission-description > .section > .bold {
+  font-family: 'Ciutadella-bold';
+  color: #0275aa;
+}
+#product {
   display: grid;
   grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100vh;
 }
-.product-body > img {
-  padding: 16px;
-  height: 400px;
-  width: calc(100% - 32px);
+.product-image {
+  display: inline-block;
+  width: 180%;
+  height: 90vh;
+  padding: 10vh 10%;
+  padding-left: 0;
 }
 .product-description {
-  font-size: 20px;
-  text-align: justify;
-  padding: 0 32px;
+  font-size: 1.5vw;
+  font-family: 'Ciutadella';
 }
-.diagram-description, .product-diagram {
-  grid-column: 1/3;
+.product-description > .section > .bold {
+  font-family: 'Ciutadella-bold';
+  color: #012333;
 }
-.diagram-description {
-  text-align: justify;
+.product-title {
+  padding-top: 100px;
+}
+.more-info > img {
+  width: 100%;
+  max-height: fit-content;
+}
+.more-info > .more-info-image-01 {
+  height: 572px;
+}
+.more-info > .more-info-image-02 {
+  height: 100vh;
+}
+#more-info-03 {
   display: grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-column-gap: 5%;
-  border-bottom: solid 0.5px lightgrey;
-  padding: 16px 40px;
+  grid-template-columns: 50% 50%;
 }
-.product-diagram {
-  height: auto !important;
-  width: auto !important;
-  margin: 70px auto 10px;
-  display: block;
+.more-info > .more-info-image-03 {
+  height: 100vh;
+  width: 100%;
 }
+.more-info-description > .section > .bold {
+  font-family: 'Ciutadella-bold';
+  color: #012333;
+}
+.more-info-description {
+  padding-top: 150px;
+}
+.more-info-description > .section {
+  font-size: 1.5vw;
+  font-family: 'Ciutadella';
+}
+
+#support {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  height: 100vh;
+}
+.support-image {
+  display: inline-block;
+  width: 100%;
+  height: 90vh;
+  padding: 10vh 10%;
+  padding-left: 0;
+}
+.support-description {
+  width: 100%;
+  font-size: 1.5vw;
+  font-family: 'Ciutadella';
+}
+.support-description > .section > .bold {
+  font-family: 'Ciutadella-bold';
+  color: #012333;
+}
+.support-title {
+  padding-top: 100px;
+}
+
 #contact-us {
   width: 100%;
   background-color: rgb(233, 233, 233);
@@ -278,221 +337,12 @@ fieldset {
 .submit:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-.features {
-  vertical-align: top;
-  display: inline-block;
-  width: 50%;
-}
-.features-body{
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
-}
-.feature{  
-  box-shadow: 0px 24px 21px -26px rgba(0,0,0,0.75);
-  margin-bottom: 30px;
-  border-radius: 8px;
-  background-color: white;
-  padding: 10px;
-}
-.feature-image{
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-  height: 150px;
-  object-fit: cover;
-}
-.feature-description{
-  box-shadow: 1px -11px 23px -10px rgb(255 255 255 / 82%);
-  text-align: end;
-  padding-top: 40px;
-  width: 90%;
-  margin: 20px 0 0 25px;
-  padding: 0px 20px 21px 0px;
-  height: 90px;
-  border-radius: 0px 0px 16px 0px;
-  border-right: 3px solid #1f7ab74b;
-  border-bottom: 3px solid #1f7ab74b;
-  font-size: 18px;
-  line-height: 30px;
-  color: rgb(38, 38, 65);
-}
-.architecture{
-  display: inline-block;
-  width: 45%;
-  padding: 16px;
-  margin-top: 35px;
-}
-.support-element {
-  width: 90%;
-  margin-left: calc(5% - 16px);
-  margin-bottom: 16px;
-  border-radius: 8px;
-  padding: 8px 16px;
-  font-size: 20px;  
-  text-align: justify;
-  box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
-  display: block;
-  background-color: white;
-}
-.support {
-  background-color: rgb(233, 233, 233);
-  padding-bottom: 16px;
-}
-.support > h3 {
-  color: rgb(2, 2, 144);
+footer{
+  background-color: rgb(17, 17, 17);
+  height: 200px;
   text-align: center;
-  font-size: 32px;
+  padding-top: 80px;
 }
-.mission {
-  text-align: justify;
-  background-color: #4472C4;
-  font-size: 1.2rem;
-  width: 100%;
-  margin: 0 16px 40px;
-  padding: 8px 16px;
-}
-.mission-text{
-  vertical-align: top;
-  display: inline-block;
-  color: whitesmoke;
-  width: 35%;
-  font-style: italic;
-  font-weight: 100;
-  padding: 170px 4% 0;
-}
-.mission-img {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  display: inline-block;
-  height: auto;
-  width: 55%;
-}
-@media only screen and (max-device-width : 640px) {
-  .header-links{
-    display: none;
-  }
-  .hide-on-mobile {
-    display: none;
-  }
-  .hide-on-desk {
-    display: inline-block;
-    padding: 25px;
-    vertical-align: top;
-    display: inline-block;
-    width: 33%;
-  }
-  #menu-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 20px;
-    letter-spacing: 2px;
-    width: 100%;
-  }
-  #dropdown-menu {
-    display: none;
-  }
-  .show-menu {
-    display: block !important;
-    width: 100%;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    background-color: #4472C4;
-    height: auto;
-    box-shadow: 0px 24px 21px -26px rgba(0,0,0,0.75);
-  }
-  .link {
-    color: white;
-    display: block;
-    width: 100%;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    border-top: 1px solid #385fa3;
-  }
-  .industry {
-    margin-top: -60px;
-    width: 100%;
-    padding: 0;
-  }
-  .industry > h3{
-    padding: 0;
-    text-align: center;
-  }
-  .industry-body {
-    grid-template-columns: 100%;
-  }
-  .industry-body > img {
-    width: 100%;
-    height: auto;
-  }
-  .industry-description {
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 250px;
-    overflow: hidden;
-  }
-  .mission {
-    padding: 0;
-    border-radius: 8px;
-  }
-  .mission-img {
-    width: 100%;
-    padding: 0;
-  }
-  .mission-text {
-    width: 90%;
-    padding-top: 5px;
-    text-align: center;
-  }
-  .support-element {
-    width: 85%;
-    margin-left: calc(7% - 16px);
-    text-align: right;
-  }
-  #contact-us {
-    padding-top: 5px;
-  }
-  #contact-form {
-    width: 80%;
-    margin-left: 3%;
-  }
-  .product-body {
-    grid-template-columns: 100%;
-    height: 600px;
-  }
-  .product-body > img {
-    padding: 0;
-    height: auto;
-    width: 100%;
-  }
-  .product-description {
-    grid-row: 2/3;
-  }
-  .column {
-    width: 100%;
-    text-align: center;
-  }
-  .product-description {
-    display: block;
-    width: 92%;
-    grid-template-columns: 100%;
-    margin: 0;
-    padding: 10px 15px;
-    padding-top: 20px;
-  }
-  .features {
-    width: 100%;
-  }
-  .architecture {
-    width: 100%;
-    padding: 0;
-  }
-  .feature-description {
-    height: auto;
-    width: 83%;
-  }
+.footer-description {
+  color: white;
 }

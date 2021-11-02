@@ -4,20 +4,17 @@
   <meta charset="utf-8">
   <title>OFAN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="./styles/carousel.css">
   <script  src="./index.js" ></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div id="header">
-    <img src="./resources/logo.png" alt="logo" class="header__logo">
     <div class="header-links">
       <a class="link" href="#"><strong>INICIO</strong></a>
-      <a class="link" href="#about-us">MISIÓN</a>
+      <a class="link" href="#about-us">NOSOTROS</a>
       <a class="link" href="#industry">INDUSTRIA</a>
+      <a class="link" href="#mission">MISIÓN</a>
       <a class="link" href="#product">PRODUCTO</a>
       <a class="link" href="#support">SOPORTE</a>
       <a class="link" href="#contact-us">CONTACTO</a>      
@@ -26,180 +23,125 @@
       <button id="menu-btn" onclick="showMenuMobile()">Menú ▼</button>
       <div id="dropdown-menu">
         <a class="link" href="#"><strong>INICIO</strong></a>
-        <a class="link" href="#about-us">MISIÓN</a>
+        <a class="link" href="#about-us">NOSOTROS</a>
         <a class="link" href="#industry">INDUSTRIA</a>
+        <a class="link" href="#mission">MISIÓN</a>
         <a class="link" href="#product">PRODUCTO</a>
         <a class="link" href="#support">SOPORTE</a>
         <a class="link" href="#contact-us">CONTACTO</a>      
       </div>
     </div>
-    <div class="select-lenguaje">
+    <!--div class="select-lenguaje">
       <span class="language-span" onclick="showLanguageMenuMobile()">Lenguaje ▼</span>
       <div class="language-dropdown hidden-dropdrown" id="dropdown-language">
         <a class="language-link" href="/">ESPAÑOL</a>
         <a class="language-link" href="/index_english.html">ENGLISH</a>
       </div>
-    </div>
+    </div -->
   </div>
   <div class="body">
-    <section class="carousel">
-      <span class="carousel-title">EMPRESA DE SOFTWARE Y CONSULTORÍA EN INTELIGENCIA OPERACIONAL EN AGRONEGOCIOS E INDUSTRIAS DE PRODUCCIÓN</span>
-      <div class="slide-container">
-        <div class="slide fade" style="display: block;">
-          <img src="./resources/carousel_3.jpg"class="carousel-image">
-        </div>
-        
-        <div class="slide fade">
-          <img src="./resources/carousel_2.jpg" class="carousel-image">
-        </div>
-        
-        <div class="slide fade">
-          <img src="./resources/carousel_1.jpg" class="carousel-image">
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>          
-        <div class="dots-container">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
+    <section>
+      <img class="home-image"  src="/resources/01 INICIO.jpg" alt="home">
+    </section>
+    <section id="about-us">
+      <img class="about-us-image"  src="/resources/01.jpg" alt="nosotros">
+      <div class="about-us-description">
+        <h2 class="about-us-title">NOSOTROS</h2>
+        <span class="section">
+          Empresa de software y soluciones formada por consultores en agronegocios y consultores 
+          en el sector químico-energético a nivel internacional. <span class="bold">OFAN</span> 
+          integra las características únicas de la agroindustria con las mejores prácticas y 
+          tecnologías avanzadas de la industria química y energética mundial. 
+        </span> 
+        <span class="section">
+          Mediante la aplicación de procesos de negocio y herramientas matemáticas – IoT, IA, ML - 
+          altamente probadas y utilizadas desde hace muchos años en otras industrias, transferimos 
+          este expertise al sector agroindustrial. 
+        </span> 
+        <span class="section">
+          Contamos con más de 20 años de experiencia en análisis y diseño de sistemas, procesos 
+          de negocio, desarrollo e implementación de sistemas de captura de información, costeo 
+          de procesos complejos, análisis económicos, optimización, planeación y control de la 
+          producción. El resultado de este sistema facilita la vinculación de la operación 
+          agroindustrial con la cadena de suministros, la administración financiera y la 
+          comercialización.
+        </span>
       </div>
     </section>
-    <section class="industry" id="industry">
-      <h3>OFAN</h3>
-      <div class="industry-body">
-        <img src="./resources/Picture2.png" alt="">
-        <p class="industry-description">
-          Empresa de software y soluciones formada por consultores en agronegocios 
-          y consultores en el sector químico-energético a nivel internacional. 
-          OFAN integra las características únicas de la agroindustria con las mejores 
-          prácticas y tecnologías avanzadas de la industria química y energética mundial. 
-          <br>
-          <br>
-          <br>
-          Mediante la aplicación de procesos de negocio y herramientas matemáticas – IoT, 
-          IA, ML - altamente probadas y utilizadas desde hace muchos años en otras 
-          industrias transferimos este expertise al sector agroindustrial, con la premisa 
-          siempre de que el beneficio de la aplicación tiene que ser superior al costo.
-          <br>
-          <br>
-          <br>
-          Contamos con más de 20 años de experiencia en análisis y diseño de sistemas, 
-          procesos de negocio, desarrollo e implementación de sistemas de captura de 
-          información, costeo de procesos complejos, análisis económicos, optimización, 
-          planeación y control de la producción. El resultado de este sistema facilita la 
-          vinculación de la operación agroindustrial con la cadena de suministros, la 
-          administración financiera y la comercialización.
-        </p>
+    <section id="industry">
+      <div class="industry-description">
+        <h2 class="industry-title">INDUSTRIA</h2>
+        <span class="section">
+          Las empresas agroindustriales se desempeñan en un ambiente muy complejo influenciado desde factores microscópicos y eventos climáticos incontrolables, pasando procesos de producción biológicos, sanitarios, industriales, inocuos y humanos, impactado por precios de mercados de insumos y productos que se rigen en las bolsas internacionales, afectadas por eventos macroeconómicos, políticos, culturales y especulativos.
+        </span> 
+        <span class="section">
+          La utilización de la digitalización de la información en las industrias es la clave para enfrentar y anticiparse a la velocidad en que suceden estos cambios en el mundo actual.
+        </span> 
+        <span class="section">
+          El sistema <span class="bold">OFAN</span> te acompaña y permite utilizar los beneficios de esta era digital en tu empresa particular, para poder visualizar estos cambios y enfocar los esfuerzos en las acciones más acertadas.
+        </span> 
+        <span class="section">
+          Aunque se ha desarrollado para la producción avipecuaria se puede adaptar fácilmente  otros sectores de producción agrícola industrial.
+        </span> 
       </div>
     </section>
-    <section class="about-us" id="about-us">
-      <div class="about-us__body">
-        <div class="mission">
-          <img class="mission-img" src="./resources/ipad.jpg">
-          <p class="mission-text">
-            Proveer a la Agro Industria la información necesaria para la toma de decisiones 
-            operacionales considerando las características únicas de cada industria mediante 
-            herramientas tecnológicas y procesos de análisis avanzados y facilitar el 
-            pronóstico y evaluación económica y financiera de diferentes escenarios productivos 
-          </p>
-        </div>
+    <section id="mission">
+      <div class="mission-description">
+        <h2 class="mission-title">MISIÓN</h2>
+        <p class="section">
+          “Proveer a la Agro Industria la información necesaria para la toma de decisiones operacionales considerando las características únicas de cada industria mediante herramientas tecnológicas y procesos de análisis avanzados”
+        </p> 
       </div>
     </section>
-    <section class="product" id="product">
-      <h3>Producto</h3>    
-      <div class="product-body">
-        <img src="./resources/IMAGEN CERDOS Y PANTALLAS.png" alt="">
-        <p class="product-description">
-          OFAN es un sistema que soporta la toma decisiones productivas en base a su 
-          impacto en la rentabilidad de la explotación agroindustrial. 
-          <br>
-          <br>
-          Permite el registro de todos los datos operacionales de los procesos biológicos y productivos,
-           además de costos directos e indirectos de producción, administración, ventas
-          y comercialización, etc. para generar indicadores de desempeño operacionales 
-          y económicos mediante un proceso de costo basado en datos biológicos y en 
-          un modelo matemático propio de la producción agroindustrial.
-          <br>
-          <br>
-          Genera reportes productivos, comerciales y económicos para cada empresa, 
-          área, granja, lote y caseta, por semana, mes o año, para lo cual se integra 
-          fácilmente con otras aplicaciones productivas, contables y administrativas.
-        </p>
-        <img src="./resources/DIAGRAMA MAXIMIZAR RENTABILIDAD.png" class="hide-on-mobile product-diagram" alt="">
-        <p class="product-description diagram-description">
-          <span class="column">
-            Permite el análisis de diferentes casos y escenarios futuros, utilizando 
-            un modelo matemático productivo y la aplicación de métodos de pronóstico 
-            especializados permitiendo elaborar un mejor presupuesto operativo en base 
-            a los resultados de rentabilidad y no únicamente en los productivos. 
-            Facilita la evaluación de resultados actuales mediante su contraste contra 
-            los escenarios o presupuestos anteriormente generados. 
-          </span>
-          <span class="column hide-on-mobile">
-            OFAN genera la información necesaria para soportar el gerenciamiento y 
-            dirección de la empresa enriqueciendo los procesos de negocio como son 
-            obtención del costo de producción, evaluación del desempeño y sus indicadores, 
-            pronóstico de consumos, costos y ventas, presupuestación y seguimiento al 
-            resultado real.
-          </span>
-          <span class="column hide-on-mobile">
-            OFAN proporciona herramientas de optimización para determinar los parámetros 
-            productivos (edad, peso y consumo) que generan la mayor rentabilidad en el 
-            proceso de producción y permite analizar el comportamiento e impacto de los 
-            mismos ante variaciones en los precios y costos de mercados, productos, 
-            insumos, gastos y de factores de producción.
-          </span>
-        </p>
-      </div>      
-      <img src="./resources/arquitectura_ofan.png" alt="architecture" class="architecture ">
-      <div class="features">
-        <div class="feature">
-          <p class="feature-description">
-            El OFAN le permite al gerenciamiento poderle dar seguimiento a los 
-            datos reales del negocio y compararlos con los proyectados, para 
-            detectar áreas de oportunidad o actualizar circunstancias. 
-          </p>
-        </div>
-        <div class="feature">
-          <p class="feature-description">
-            A través de una interfase de visualización de Microsoft Excel que 
-            interpreta y analiza los datos presentados, en el depositorio de la 
-            información, para enfocar el tiempo y los recursos a las decisiones.
-          </p>
-        </div>
-        <div class="feature">
-          <p class="feature-description">
-            Gracias al tablero de resultados en código de colores y gráficos, 
-            permite identificar no sólo los indicadores definidos, sino como y 
-            porque cambiaron las variables de dichos indicadores.
-          </p>
-        </div>
+    <section id="product">
+      <img class="product-image"  src="/resources/05 PRODUCTO.jpg" alt="producto">
+      <div class="product-description">
+        <h2 class="product-title">PRODUCTO</h2>
+        <span class="section">
+          <span class="bold">OFAN</span> es un sistema que soporta la toma decisiones productivas en base a su impacto en la rentabilidad de la explotación agroindustrial. 
+        </span> 
+        <span class="section">
+          Permite el registro de todos los datos operacionales de los procesos biológicos y productivos, además de costos directos e indirectos de producción, administración, ventas y comercialización, etc. para generar indicadores de desempeño operacionales y económicos mediante un proceso de costo basado en datos biológicos y en un modelo matemático propio de la producción agroindustrial.
+        </span> 
+        <span class="section">
+          Genera reportes productivos, comerciales y económicos para cada empresa, área, granja, lote y caseta, por semana, mes o año, para lo cual se integra fácilmente con otras aplicaciones productivas, contables y administrativas.
+        </span>
       </div>
     </section>
-    <section class="support" id="support">
-      <hr>
-      <h3>SOPORTE</h3>
-      <span class="support-element">
-        EN LA IMPLEMENTACIÓN DEL SISTEMA OFAN EN SU AGRONEGOCIO, SIEMPRE ESTARA 
-        DISPONIBLE EL SOPORTE TECNICO DEL FUNCIONAMIENTO DEL SOFTWARE PARA GARANTIZAR 
-        LA OBTENCIÓN Y LOS PODEROSOS ANALISIS DE INFORMACIÓN QUE EL SISTEMA PROPORCIONA.
-      </span>
-      <span class="support-element">
-        TAMBIEN CUENTA CON LA CONSULTORÍA EN REPORTEO, GENERACIÓN 
-        Y ANALISIS DE INFORMACIÓN ADICIONAL NECESARIA.
-      </span>
-      <span class="support-element">
-        SIEMPRE SU PERSONAL GERENCIAL, DE TI Y OPERATIVO ESTARA ACOMPAÑADO 
-        EN EL FUNCIONAMIENTO CORRECTO DEL SISTEMA.
-      </span>
-      <span class="support-element">
-        CAPACIDAD DE DESARROLLO E INTEGRACIÓN CON OTRAS APLICACIONES EN SU AGROINDUSTRIA.
-      </span>
+    <section class="more-info">      
+      <img class="more-info-image-01"  src="/resources/05 PRODUCTO 01.jpg" alt="producto 01">
+    </section>
+    <section class="more-info">      
+      <img class="more-info-image-02"  src="/resources/05 PRODUCTO 02.jpg" alt="producto 02">
+    </section>
+    <section class="more-info" id="more-info-03">      
+      <img class="more-info-image-03"  src="/resources/071.jpg" alt="producto 03">
+      <div class="more-info-description">
+        <span class="section">
+          <span class="bold">OFAN</span> permite a la gerencia dar seguimiento a datos reales del negocio, compararlos y evaluarlos, realizar pronósticos y proyecciones de los mismos, y realizar análisis “gap” para detectar áreas de oportunidad de mejora. 
+        </span> 
+        <span class="section">
+          A través de una interfase de visualización como Microsoft Excel, permite analizar e interpretar rápidamente los datos provenientes de su base de datos. Optimizando el tiempo para la toma de decisiones.
+        </span> 
+        <span class="section">
+          Gracias a sus reportes y al tablero de resultados, codificados tipo semáforo  - verde, amarillo y rojo – permite identificar el estado de los indicadores, así como el origen de su variabilidad y las variables con los que se relacionan.
+        </span>
+      </div>
+    </section>
+    <section id="support">
+      <img class="support-image"  src="/resources/14.jpg" alt="soporte">
+      <div class="support-description">
+        <h2 class="support-title">PRODUCTO</h2>
+        <span class="section">
+          <span class="bold">OFAN</span> es un sistema que soporta la toma decisiones productivas en base a su impacto en la rentabilidad de la explotación agroindustrial. 
+        </span> 
+        <span class="section">
+          Permite el registro de todos los datos operacionales de los procesos biológicos y productivos, además de costos directos e indirectos de producción, administración, ventas y comercialización, etc. para generar indicadores de desempeño operacionales y económicos mediante un proceso de costo basado en datos biológicos y en un modelo matemático propio de la producción agroindustrial.
+        </span> 
+        <span class="section">
+          Genera reportes productivos, comerciales y económicos para cada empresa, área, granja, lote y caseta, por semana, mes o año, para lo cual se integra fácilmente con otras aplicaciones productivas, contables y administrativas.
+        </span>
+      </div>
     </section>
     <section class="contact" id="contact-us">
       <form id="contact-form" action="" method="post">
