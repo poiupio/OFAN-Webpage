@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="header">
-    <div class="header-links">
+    <div class="header-links hide-on-mobile">
       <a class="link" href="#"><strong>INICIO</strong></a>
       <a class="link" href="#about-us">NOSOTROS</a>
       <a class="link" href="#industry">INDUSTRIA</a>
@@ -22,13 +22,13 @@
     <div class="hide-on-desk">
       <button id="menu-btn" onclick="showMenuMobile()">Menú ▼</button>
       <div id="dropdown-menu">
-        <a class="link" href="#"><strong>INICIO</strong></a>
-        <a class="link" href="#about-us">NOSOTROS</a>
-        <a class="link" href="#industry">INDUSTRIA</a>
-        <a class="link" href="#mission">MISIÓN</a>
-        <a class="link" href="#product">PRODUCTO</a>
-        <a class="link" href="#support">SOPORTE</a>
-        <a class="link" href="#contact-us">CONTACTO</a>      
+        <a class="link" onclick="showMenuMobile()" href="#"><strong>INICIO</strong></a>
+        <a class="link" onclick="showMenuMobile()" href="#about-us">NOSOTROS</a>
+        <a class="link" onclick="showMenuMobile()" href="#industry">INDUSTRIA</a>
+        <a class="link" onclick="showMenuMobile()" href="#mission">MISIÓN</a>
+        <a class="link" onclick="showMenuMobile()" href="#product">PRODUCTO</a>
+        <a class="link" onclick="showMenuMobile()" href="#support">SOPORTE</a>
+        <a class="link" onclick="showMenuMobile()" href="#contact-us">CONTACTO</a>      
       </div>
     </div>
     <!--div class="select-lenguaje">
@@ -37,7 +37,7 @@
         <a class="language-link" href="/">ESPAÑOL</a>
         <a class="language-link" href="/index_english.html">ENGLISH</a>
       </div>
-    </div -->
+    </div-->
   </div>
   <div class="body">
     <section>

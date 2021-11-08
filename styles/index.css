@@ -100,7 +100,7 @@ body{
 #header{
   box-shadow: 0px 24px 21px -26px rgba(0,0,0,0.75);
   background-color: #4492c3;
-  position: sticky;
+  position: sticky !important;
   height: 60px;
   width: 100%;
   position: -webkit-sticky;
@@ -118,8 +118,8 @@ body{
 section {
   color: #013045;
 }
-#about-us, #industry, #mission, #product, #support {
-  scroll-margin: 60px 0 0 0;
+#about-us, #industry, #mission, #product, #support, #contact-us {
+  scroll-margin: 40px 0 0 0;
 }
 .home-image {
   display: block;
@@ -154,7 +154,7 @@ section {
 .about-us-description > .section, .industry-description > .section, .product-description > .section, .more-info-description > .section, .support-description > .section {
   display: block;
   text-align: justify;
-  padding: 1.5vw 50px;
+  padding: 1vw 50px;
 }
 .about-us-description > .section > .bold {
   font-family: 'Ciutadella-bold';
@@ -162,7 +162,7 @@ section {
 }
 #industry {
   background-image: url(../resources/11.jpg);
-  height: 120vh;
+  height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 57%;
@@ -184,13 +184,16 @@ section {
 }
 #mission {
   background-image: url(../resources/08.jpg);
-  height: 70vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10vh 40px 0 70%;
+  padding: 8vh 40px 0 70%;
 }
 .mission-title {
   color: white;
+}
+.mission-description {
+  margin-top: 15vh;
 }
 .mission-description > .section {
   color: white;
@@ -213,8 +216,7 @@ section {
 .product-image {
   display: inline-block;
   width: 180%;
-  height: 90vh;
-  padding: 10vh 10%;
+  height: 100vh;
   padding-left: 0;
 }
 .product-description {
@@ -226,7 +228,7 @@ section {
   color: #012333;
 }
 .product-title {
-  padding-top: 100px;
+  padding-top: 8vh;
 }
 .more-info > img {
   width: 100%;
@@ -281,9 +283,8 @@ section {
   color: #012333;
 }
 .support-title {
-  padding-top: 100px;
+  padding-top: 8vh;
 }
-
 #contact-us {
   width: 100%;
   background-color: rgb(233, 233, 233);
@@ -292,7 +293,7 @@ section {
 }
 #contact-form {
   background: #F9F9F9;
-  padding: 25px 25px 10px 25px;
+  padding: 5px 25px 10px 25px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.424), 0 5px 5px 0 rgba(0, 0, 0, 0.472);
   width: 34%;
   margin-left: 33%;
@@ -300,9 +301,11 @@ section {
 }
 #contact-form h3 {
   display: block;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 300;
   margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
 }
 #contact-form > fieldset > input, textarea{
   border: solid 1px gainsboro;
@@ -325,7 +328,6 @@ fieldset {
   display: block;
   text-align: center;
   cursor: pointer;
-  width: 80%;
   border: none;
   background: #4472C4;
   color: #FFF;
@@ -345,4 +347,161 @@ footer{
 }
 .footer-description {
   color: white;
+}
+
+@media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .hide-on-desk {
+    display: block;    
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .header-links{
+    display: none;
+  }
+  #menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  #dropdown-menu {
+    display: none;
+  }
+  .show-menu {
+    display: block !important;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #4472C4;
+    height: auto;
+    box-shadow: 0px 24px 21px -26px rgba(0,0,0,0.75);
+  }
+  .link {
+    color: white;
+    display: block;
+    width: 95%;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-top: 1px solid #385fa3;
+  }
+  #about-us, #industry, #mission, #product, #support, #contact-us {
+    scroll-margin: 0;
+  }
+  .home-image {
+    height: auto;
+  }
+  #about-us {
+    height: auto;
+    grid-template-columns: 100%;
+  }
+  .about-us-image {
+    height: auto;
+    padding: 0;
+  }
+  .about-us-title {
+    padding: 0;
+  }
+  .about-us-description {
+    padding-bottom: 50px;
+  }
+  .section {
+    font-size: 14px !important;
+  }
+  .about-us-description > .section{
+    padding: 2vw 16px;
+  }
+  #industry {
+    padding-left: 0;
+    height: auto;
+    padding-bottom: 60px;
+    background-position: 40%;
+  }
+  #mission {
+    height: 600px;    
+    background-position: 40%;
+    padding: 0;
+  }
+  .mission-description {
+    margin-top: 0;
+    padding: 40% 0 20px 45%;
+    display: block;
+    width: 50%;
+    color: #013045;
+  }
+  .mission-title {
+    background-color: #4492c3;
+    border-radius: 5px;
+    padding: 0;
+  }
+  .mission-description > .section {
+    background-color: #4492c3;
+    border-radius: 5px; 
+    padding: 16px;
+  }
+  #product {
+    grid-template-columns: 100%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .product-image {
+    height: auto;
+  }
+  .product-title {
+    padding: 0;
+  }
+  .more-info > img {
+    height: auto;
+  }
+  .more-info > .more-info-image-01 {
+    height: auto;
+  }
+  .more-info > .more-info-image-02 {
+    height: auto;
+  }
+  #more-info-03 {
+    grid-template-columns: 100%;
+  }
+  .more-info > .more-info-image-03 {
+    height: auto;
+  }
+  .more-info-description {
+    padding-top: 30px;
+  }
+  #support {
+    grid-template-columns: 100%;
+    height: auto;
+  }
+  .support-image {
+    height: auto;
+    padding: 0;
+  }
+  .support-title {
+    padding-top: 0;
+  }
+  .support-description {
+    padding-bottom: 30px;
+  }
+  .support-description > .section {
+    padding: 1vw 16px;
+  }
+  #contact-form {
+    width: 80%;
+    margin-left: 3%;
+  }
 }
