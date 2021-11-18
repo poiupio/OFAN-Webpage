@@ -26,9 +26,8 @@ html {
 }
 .header-links{
   display: inline-grid;
-  width: 80%;
   height: 40px;
-  padding-left: calc(100% - 890px);
+  padding-left: calc(100% - 960px);
   grid-template-columns: repeat(7, 120px);
   position: relative;
   top: -45px;
@@ -53,6 +52,14 @@ html {
 .header-links > .link:hover{
   background-color: rgb(66,106,153);
   background-color: linear-gradient(0deg, rgba(66,106,153,1) 0%, #4492c3 40%, #4492c3 100%); 
+}
+.logo {
+  display: inline-block;
+  height: 40px;
+  padding-left: 16px;
+}
+.logo:hover {
+  cursor: pointer;
 }
 .select-lenguaje {
   position: absolute;
@@ -340,15 +347,26 @@ fieldset {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 footer{
-  background-color: rgb(17, 17, 17);
+  background-color: #2c5f80;;
   height: 200px;
   text-align: center;
   padding-top: 80px;
 }
-.footer-description {
+.footer-description, footer > p {
   color: white;
 }
-
+.linkedin {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+.linkedin:hover {
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   html {
     overflow-x: hidden;
@@ -358,12 +376,11 @@ footer{
   }
   .hide-on-desk {
     display: block;    
-    display: inline-block;
-    padding: 20px;
-    vertical-align: top;
-    display: inline-block;
+    display: inline-grid;
     width: 100%;
     text-align: center;
+    padding-top: 10px;
+    grid-template-columns: 34vw 66vw;
   }
   .header-links{
     display: none;
@@ -374,7 +391,10 @@ footer{
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
-    width: 100%;
+    display: inline-block;
+    width: 62%;
+    vertical-align: top;
+    padding-top: 5px;
   }
   #dropdown-menu {
     display: none;
